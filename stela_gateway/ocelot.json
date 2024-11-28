@@ -1,0 +1,250 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/swagger/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/file/swagger/{everything}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/additional-service/upload",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/additional-service/upload",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/additional-service/download/{filename}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/additional-service/download/{filename}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/material/upload",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/material/upload",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/material/download/{filename}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/material/download/{filename}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/memorial/upload",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/memorial/upload",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/memorial/download/{filename}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/memorial/download/{filename}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/portfolio-memorial/upload",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/portfolio-memorial/upload",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/portfolio-memorial/download/{filename}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/portfolio-memorial/download/{filename}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/profile/upload",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/profile/upload",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/profile/download/{filename}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-file-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/profile/download/{filename}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/swagger/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/content/swagger/{everything}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/additional-services",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/additional-services",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/additional-service",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/additional-service",
+            "UpstreamHttpMethod": [ "Post", "Delete" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/additional-service/name",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/additional-service/name",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/additional-service/id",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/additional-service/id",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/material",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/material",
+            "UpstreamHttpMethod": [ "Post", "Delete", "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/materials",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/materials",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/memorial",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/memorial",
+            "UpstreamHttpMethod": [ "Post", "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/memorials",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/memorials",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/portfolio-memorial",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/portfolio-memorial",
+            "UpstreamHttpMethod": [ "Post", "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/portfolio-memorials",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/portfolio-memorials",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/tools/calculate-plot-price",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-content-server", "Port": 80}],
+            "UpstreamPathTemplate": "/api/tools/calculate-plot-price",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/auth/apply-registration",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/auth/apply-registration",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/swagger/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/auth/swagger/{everything}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/auth/signup",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/auth/signup",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/auth/signin",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/auth/signin",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/auth/restore-token",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/auth/restore-token",
+            "UpstreamHttpMethod": [ "Patch" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/auth/change-password",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/auth/change-password",
+            "UpstreamHttpMethod": [ "Patch" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/me",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/me",
+            "UpstreamHttpMethod": [ "Get", "Patch" ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/me/verify",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [ {"Host": "stela-auth-api", "Port": 80}],
+            "UpstreamPathTemplate": "/api/me/verify",
+            "UpstreamHttpMethod": [ "Patch" ]
+        }
+    ]
+}
